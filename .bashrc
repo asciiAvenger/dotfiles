@@ -14,4 +14,5 @@ alias ll='ls -alF'
 # env
 export EDITOR='vim'
 
-neofetch
+# starship prompt
+eval "$(starship init bash)"
