@@ -8,4 +8,4 @@ some basic dotfiles for my arch install
 - picom
 - alacritty
 - xorg, xorg-xinit
-- neofetch
+- starship

@@ -1,13 +1,13 @@
 #~/.xinitrc
 
 # xrandr settings
-xrandr --output DisplayPort-1 --primary --auto --output HDMI-A-1 --left-of DisplayPort-1 --auto
+#xrandr --output DisplayPort-1 --primary --auto --output HDMI-A-1 --left-of DisplayPort-1 --auto
 
 # cursor settings
-xrdb ~/.Xresources
+#xrdb /home/philipp/.Xresources
 
 # compositor
-picom &
+#picom &
 
-exec qtile start
+#exec qtile start
 
