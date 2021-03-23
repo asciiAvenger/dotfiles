@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # more aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 
 # env
 export EDITOR='vim'
