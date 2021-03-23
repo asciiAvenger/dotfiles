@@ -8,3 +8,6 @@ xrdb /home/philipp/.Xresources
 
 # compositor
 picom &
+
+# screen locker
+light-locker &

@@ -24,6 +24,10 @@ keys = [
     Key([mod], "o", lazy.layout.maximize()),
     Key([mod, "shift"], "space", lazy.layout.flip()),
 
+
+    # screen locking
+    Key([mod], "l", lazy.spawn("light-locker-command --lock")),
+
     # volume controls (pamixer)
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 2")),
     Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer -d 2")),
