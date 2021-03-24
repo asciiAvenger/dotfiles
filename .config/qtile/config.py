@@ -144,18 +144,13 @@ bar_widgets = [
 
 screens = [
     Screen(
-        wallpaper="/home/philipp/Pictures/wallpapers/trees.jpg",
-        wallpaper_mode="fill",
         top=bar.Bar(
             bar_widgets,
             28,
             background=colors[0]
         )
     ),
-    Screen(
-        wallpaper="/home/philipp/Pictures/wallpapers/trees.jpg",
-        wallpaper_mode="fill"
-    )
+    Screen()
 ]
 
 # Drag floating layouts.
