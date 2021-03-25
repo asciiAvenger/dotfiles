@@ -2,10 +2,14 @@
 
 some basic dotfiles for my arch install
 
-## dependencies
+## install for best experience
 
 - qtile
 - picom
 - alacritty
 - xorg, xorg-xinit
 - starship
+- mpv
+- sxiv
+- devour
+- ranger
