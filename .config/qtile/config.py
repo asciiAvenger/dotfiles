@@ -24,9 +24,8 @@ keys = [
     Key([mod], "o", lazy.layout.maximize()),
     Key([mod, "shift"], "space", lazy.layout.flip()),
 
-
     # screen locking
-    Key([mod], "l", lazy.spawn("light-locker-command --lock")),
+    Key([mod, "control"], "l", lazy.spawn("light-locker-command --lock")),
 
     # volume controls (pamixer)
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 2")),
@@ -34,11 +33,12 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn("pamixer -t")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
-    # rofi bindings (drun, run, emoji, ssh)
+    # rofi bindings (drun, run, emoji, ssh, window switcher)
     Key([mod], "space", lazy.spawn("rofi -show drun -theme arthur")),
     Key([mod, "control"], "space", lazy.spawn("rofi -show run -theme arthur")),
     Key([mod], "e", lazy.spawn("rofi -show emoji -modi emoji -theme arthur")),
     Key([mod], "s", lazy.spawn("rofi -show ssh -theme arthur")),
+    Key([mod], "t", lazy.spawn("rofi -show window -theme arthur")),
 
     # toggle floating
     Key([mod], "f", lazy.window.toggle_floating()),
@@ -120,6 +120,12 @@ bar_widgets = [
     widget.Prompt(),
     widget.WindowName(),
     widget.Systray(),
+    widget.Sep(
+        foreground=colors[2],
+        linewidth=2,
+        padding=15,
+        size_percent=75
+    ),
     widget.CPU(),
     widget.Sep(
         foreground=colors[2],
