@@ -11,7 +11,7 @@ some basic dotfiles for my arch install
 - starship
 - mpv
 - sxiv
-- devour
+- devour (AUR)
 - ranger
 - nerd-font-fira-code (AUR)
 - pulseaudio, pavucontrol
