@@ -14,7 +14,7 @@ some basic dotfiles for my arch install
 - devour (AUR)
 - ranger
 - nerd-font-fira-code (AUR)
-- pulseaudio, pavucontrol
+- pulseaudio, pavucontrol, pamixer
 - nitrogen
 - rofi, rofi-emoji (AUR), xsel, xclip
 - python-psutil
