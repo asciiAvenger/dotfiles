@@ -7,7 +7,8 @@
 
 # aliases
 alias ls='ls --color=auto'
-alias ll='ls -alhF'
+alias l='ls --color=auto -lhF'
+alias ll='ls --color=auto -alhF'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 
