@@ -13,3 +13,8 @@ some basic dotfiles for my arch install
 - sxiv
 - devour
 - ranger
+- nerd-font-fira-code (AUR)
+- pulseaudio, pavucontrol
+- nitrogen
+- rofi, rofi-emoji (AUR), xsel, xclip
+- python-psutil

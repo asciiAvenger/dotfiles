@@ -1,0 +1,5 @@
+- nerd-font-fira-code
+- pulseaudio, pauvcontrol
+- nitrogen
+- rofi, rofi-emoji (AUR), xsel, xclip
+- python-psutil
