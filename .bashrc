@@ -9,6 +9,8 @@
 alias ls='ls --color=auto'
 alias l='ls --color=auto -lhF'
 alias ll='ls --color=auto -alhF'
+alias zathura='devour zathura'
+alias notepadqq='devour notepadqq'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 

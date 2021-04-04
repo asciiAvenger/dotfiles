@@ -9,8 +9,7 @@ some basic dotfiles for my arch install
 - alacritty
 - xorg, xorg-xinit
 - starship
-- mpv
-- sxiv
+- mpv, sxiv, zathura, notepadqq
 - devour (AUR)
 - ranger
 - nerd-font-fira-code (AUR)
