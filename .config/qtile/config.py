@@ -25,23 +25,26 @@ keys = [
     Key([mod, "shift"], "space", lazy.layout.flip()),
 
     # screen locking
-    Key([mod, "control"], "l", lazy.spawn("light-locker-command --lock")),
+    # Key([mod, "control"], "l", lazy.spawn("light-locker-command --lock")),
 
     # volume controls (pamixer)
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 2")),
-    Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer -d 2")),
-    Key([], "XF86AudioMute", lazy.spawn("pamixer -t")),
+    # Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 2")),
+    # Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer -d 2")),
+    # Key([], "XF86AudioMute", lazy.spawn("pamixer -t")),
     Key([mod], "p", lazy.spawn("pavucontrol")),
 
     # rofi bindings (drun, run, emoji, ssh, window switcher)
-    Key([mod], "space", lazy.spawn("rofi -show drun -theme arthur")),
-    Key([mod, "control"], "space", lazy.spawn("rofi -show run -theme arthur")),
-    Key([mod], "e", lazy.spawn("rofi -show emoji -modi emoji -theme arthur")),
-    Key([mod], "s", lazy.spawn("rofi -show ssh -theme arthur")),
-    Key([mod], "t", lazy.spawn("rofi -show window -theme arthur")),
+    Key([mod], "space", lazy.spawn("rofi -show drun -theme paper-float")),
+    Key([mod, "control"], "space", lazy.spawn("rofi -show run -theme paper-float")),
+    Key([mod], "e", lazy.spawn("rofi -show emoji -modi emoji -theme paper-float")),
+    Key([mod], "s", lazy.spawn("rofi -shoo ssh -theme paper-float")),
+    Key([mod], "t", lazy.spawn("rofi -show window -theme paper-float")),
 
     # toggle floating
     Key([mod], "f", lazy.window.toggle_floating()),
+
+    # toggle fullscreen
+    Key([mod, "shift"], "f", lazy.window.toggle_fullscreen()),
 
     # launch terminal
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
