@@ -21,6 +21,10 @@ bindkey -e
 # MY CONFIG #
 #############
 
+# completion
+source <(kubectl completion zsh)
+source <(helm completion zsh)
+
 # aliases
 alias ls='ls --color=auto'
 alias l='ls --color=auto -lhF'
