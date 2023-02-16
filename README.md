@@ -2,18 +2,10 @@
 
 some basic dotfiles for my arch install
 
-## install for best experience
+## what to install
 
-- qtile
-- picom
-- alacritty
-- xorg, xorg-xinit
+- zsh
+- vim
 - starship
-- mpv, sxiv, zathura, notepadqq
-- devour (AUR)
 - ranger
-- nerd-font-fira-code (AUR)
-- pulseaudio, pavucontrol, pamixer
-- nitrogen
-- rofi, rofi-emoji (AUR), xsel, xclip
-- python-psutil
+- ttf-firacode-nerd

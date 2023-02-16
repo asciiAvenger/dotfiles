@@ -29,14 +29,11 @@ source <(helm completion zsh)
 alias ls='ls --color=auto'
 alias l='ls --color=auto -lhF'
 alias ll='ls --color=auto -alhF'
-alias zathura='devour zathura'
-alias notepadqq='devour notepadqq'
-alias mpv='devour mpv'
-alias sxiv='devour sxiv'
 alias ranger='source ranger'
 
 # env
 export EDITOR='vim'
+export PATH=$PATH:$HOME/go/bin
 
 # starship prompt
 eval "$(starship init zsh)"
