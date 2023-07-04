@@ -21,6 +21,9 @@ bindkey -e
 # MY CONFIG #
 #############
 
+# make delete work
+bindkey "^[[3~" delete-char
+
 # completion
 source <(kubectl completion zsh)
 source <(helm completion zsh)
