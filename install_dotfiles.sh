@@ -19,3 +19,8 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zs
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone --depth=1 https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+# Copy the dotfiles
+cp -r .bin ~/
+cp -r .config/* ~/.config/
+cp ./{.p10k.zsh,.zshrc,.vimrc} ~/
