@@ -1,0 +1,23 @@
+# See dunst(5) for all configuration options
+
+[global]
+    ### Display ###
+
+    # monitor = 1
+    follow = mouse
+
+    ### Geometry ###
+
+    width = 300
+    height = 300
+
+    origin = top-right
+
+    ### Text ###
+
+    font = Noto Sans 14
+
+    ### Icons ###
+
+    enable_recursive_icon_lookup = true
+    icon_theme = Breeze
