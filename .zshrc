@@ -35,7 +35,7 @@ alias ranger='source ranger'
 alias hx='helix'
 
 # env
-export EDITOR='helix'
+export EDITOR='nvim'
 #export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
 
