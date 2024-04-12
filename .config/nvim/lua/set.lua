@@ -11,3 +11,5 @@ vim.opt.wrap = true
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
+
+vim.opt.mouse = ""
