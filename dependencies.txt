@@ -45,7 +45,9 @@ nwg-look
 okular
 otf-font-awesome
 pavucontrol
+pipewire
 polkit-kde-agent
+python
 qt5-wayland
 qt6-wayland
 qt6ct
@@ -62,6 +64,7 @@ ttf-opensans
 udiskie
 veracrypt
 waybar
+wireplumber
 wl-clipboard
 wlogout
 wofi
