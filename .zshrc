@@ -13,6 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
+  aliases
   git
   copyfile
   history
@@ -33,6 +34,9 @@ source <(helm completion zsh)
 # aliases
 alias ranger='source ranger'
 alias hx='helix'
+alias cl='clear'
+alias pacss='pacman -Ss'
+alias yayss='yay -Ss'
 
 # env
 export EDITOR='nvim'
