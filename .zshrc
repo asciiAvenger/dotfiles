@@ -31,6 +31,9 @@ source $ZSH/oh-my-zsh.sh
 source <(kubectl completion zsh)
 source <(helm completion zsh)
 
+# keychain for remembering ssh key passwords
+eval $(keychain --eval --quiet id_ed25519)
+
 # aliases
 alias ranger='source ranger'
 alias hx='helix'
