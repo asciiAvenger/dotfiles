@@ -1,6 +1,6 @@
 * {
   font-family: "NotoSans Nerd Font", FontAwesome, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 window#waybar {
@@ -71,3 +71,4 @@ button {
   background-color: #cbef43;
   color: black;
 }
+
