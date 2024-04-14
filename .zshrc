@@ -40,6 +40,7 @@ alias hx='helix'
 alias cl='clear'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
+alias s='kitten ssh'
 
 # env
 export EDITOR='nvim'
