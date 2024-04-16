@@ -23,6 +23,11 @@ button {
   border-radius: 8px;
 }
 
+#workspaces button.visible {
+  background-color: #cbef43;
+  color: black;
+}
+
 .modules-left,
 .modules-right,
 .modules-center {
@@ -71,4 +76,3 @@ button {
   background-color: #cbef43;
   color: black;
 }
-
