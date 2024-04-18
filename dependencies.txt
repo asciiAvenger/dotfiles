@@ -29,7 +29,11 @@ imagemagick
 inetutils
 jq
 kitty
+ksshaskpass
 kubectl
+kwallet
+kwallet-pam
+kwalletmanager
 libappindicator-gtk3
 libreoffice-still-de
 luajit
@@ -53,6 +57,7 @@ qt6-wayland
 qt6ct
 ranger
 ripgrep
+sddm-sugar-candy-git
 slurp
 steam
 thunderbird
