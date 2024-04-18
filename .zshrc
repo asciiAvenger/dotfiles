@@ -32,7 +32,7 @@ source <(kubectl completion zsh)
 source <(helm completion zsh)
 
 # keychain for remembering ssh key passwords
-eval $(keychain --eval --quiet id_ed25519)
+#eval $(keychain --eval --quiet id_ed25519)
 
 # aliases
 alias ranger='source ranger'
@@ -46,6 +46,8 @@ alias s='kitten ssh'
 export EDITOR='nvim'
 #export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
+export SSH_ASKPASS=/usr/bin/ksshaskpass
+export SSH_ASKPASS_REQUIRE=prefer
 
 # for agnoster
 # replace user@hostname with this cute little space invader
