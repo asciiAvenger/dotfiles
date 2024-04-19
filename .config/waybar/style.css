@@ -4,8 +4,7 @@
 }
 
 window#waybar {
-  /*background-color: rgba(43, 48, 59, 0.5);*/
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(43, 48, 59, 0.5);
   color: white;
 }
 
@@ -36,7 +35,6 @@ button {
 }
 
 #clock,
-#window,
 #pulseaudio,
 #bluetooth,
 #battery,
@@ -53,10 +51,6 @@ button {
 }
 
 #clock {
-  background-color: #433a3f;
-}
-
-#window {
   background-color: #433a3f;
 }
 
