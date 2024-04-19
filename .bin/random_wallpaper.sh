@@ -9,5 +9,5 @@ wallpaper = ,$WALLPAPER
 splash = false
 EOF
 
-hyprpaper &
+hyprpaper &> /dev/null &
 disown
