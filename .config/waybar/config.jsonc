@@ -125,5 +125,8 @@
     "format": "",
     "tooltip": false,
     "on-click": "wlogout"
+  },
+  "hyprland/window": {
+    "separate-outputs": true
   }
 }
