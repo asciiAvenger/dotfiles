@@ -57,7 +57,7 @@ qt6-wayland
 qt6ct
 ranger
 ripgrep
-sddm-sugar-candy-git
+sddm-theme-tokyo-night-git
 slurp
 steam
 thunderbird
