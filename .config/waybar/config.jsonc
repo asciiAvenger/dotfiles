@@ -127,6 +127,10 @@
     "on-click": "wlogout"
   },
   "hyprland/window": {
-    "separate-outputs": true
+    "separate-outputs": true,
+    "rewrite": {
+      "(.*) — Mozilla Firefox": "🌐 $1",
+      "tmux": "🗔"
+    }
   }
 }
