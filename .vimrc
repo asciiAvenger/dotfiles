@@ -1,9 +1,10 @@
 " line numbers
 set number
+set relativenumber
 
 " indentation and spaces
 set expandtab
-set tabstop=2 shiftwidth=2
+set tabstop=4 shiftwidth=4
 set smarttab
 set autoindent
 
