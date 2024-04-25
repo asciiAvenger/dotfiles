@@ -1,6 +1,6 @@
 * {
   font-family: "NotoSans Nerd Font", FontAwesome, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -31,7 +31,7 @@ button {
 .modules-left,
 .modules-right,
 .modules-center {
-  padding: 3px 20px;
+  padding: 2px 20px;
 }
 
 #clock,
