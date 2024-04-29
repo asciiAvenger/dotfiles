@@ -38,3 +38,18 @@ let g:netrw_liststyle=3
 
 " syntax highlighting
 syntax enable
+
+" keybindings
+let mapleader=" "
+
+" open netrw
+nmap <leader>m :Ex<CR>
+
+" find and grep
+nmap <leader>ff :find 
+nmap <leader>fg :vimgrep 
+
+" quick fix list commands
+nmap <leader>ql :copen<CR>
+nmap <leader>qn :cnext<CR>
+nmap <leader>qp :cprevious<CR>
