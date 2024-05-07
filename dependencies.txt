@@ -3,6 +3,7 @@ blueman
 breeze
 breeze-gtk
 breeze-icons
+breeze-grub
 brightnessctl
 cotp
 cotp-converters
