@@ -37,10 +37,11 @@ source <(helm completion zsh)
 # aliases
 alias ranger='source ranger'
 alias hx='helix'
-alias cl='clear'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
 alias ssh='kitten ssh'
+alias vim='nvim'
+alias vimdiff='nvim -d'
 
 # env
 export EDITOR='nvim'
