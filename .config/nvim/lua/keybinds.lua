@@ -2,7 +2,10 @@
 vim.g.mapleader = " "
 
 -- neotree bindings
-vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>")
+vim.keymap.set("n", "<leader>n", ":Neotree filesystem toggle<CR>")
+
+-- open netrw
+vim.keymap.set("n", "<leader>m", ":Ex<CR>")
 
 -- navigating panes easier than ctrl w and hjkl
 --vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
