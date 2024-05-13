@@ -1,12 +1,9 @@
 android-tools
 arc-gtk-theme
-arc-gtk-theme
-arc-icon-theme
 arc-icon-theme
 ark
 blueman
 breeze
-breeze-grub
 breeze-gtk
 breeze-icons
 brightnessctl
@@ -23,8 +20,8 @@ gamescope
 go
 graphviz
 grim
+grub-theme-vimix
 gvfs-mtp
-helix
 helm
 htop
 hunspell-de
@@ -46,6 +43,8 @@ libappindicator-gtk3
 libreoffice-still-de
 luajit
 luarocks
+man-db
+man-pages
 mangohud
 maven
 neovim
@@ -62,6 +61,8 @@ python
 qt5-wayland
 qt6-wayland
 qt6ct
+qtkeychain-qt5
+qtkeychain-qt6
 ranger
 ripgrep
 sddm-theme-tokyo-night-git
