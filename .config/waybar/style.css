@@ -1,10 +1,19 @@
+/* Variables */
+@define-color black #040303;
+@define-color gunmetal #1f2926;
+@define-color grey1 #3a4e48;
+@define-color grey2 #6a7b76;
+@define-color green #8b9d83;
+@define-color ash #a5a795;
+@define-color silver #beb0a7;
+
 * {
   font-family: "NotoSans Nerd Font", FontAwesome, sans-serif;
   font-size: 16px;
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0.5);
+  background: transparent;
   color: white;
 }
 
@@ -16,63 +25,63 @@ button {
   border-radius: 0;
 }
 
+.module {
+  padding: 1px 10px;
+  margin: 0;
+}
+
+#workspaces {
+  background-color: @grey1;
+}
+
 #workspaces button {
-  background-color: #3d5a6c;
-  color: #ffffff;
-  margin: 0 3px;
-  border-radius: 8px;
+  margin: 0 5px;
+  color: white;
 }
 
 #workspaces button.visible {
-  background-color: #cbef43;
-  color: black;
+  border-bottom: 3px solid white;
 }
 
-.modules-left,
-.modules-right,
-.modules-center {
-  padding: 2px 20px;
-}
-
-#clock,
-#pulseaudio,
-#bluetooth,
-#battery,
-#cpu,
-#memory,
-#custom-power-menu,
-#idle_inhibitor {
-  padding: 2px 10px;
-  border-radius: 10px;
+#window {
+  background-color: @grey2;
 }
 
 #tray {
-  padding: 2px 10px;
+  background-color: @grey2;
 }
 
 #clock {
-  background-color: #433a3f;
+  background-color: @gunmetal;
 }
 
-#pulseaudio {
-  background-color: #433a3f;
+#wireplumber {
+  background-color: @ash;
+  color: black;
 }
 
 #bluetooth {
-  background-color: #3d5a6c;
+  background-color: @green;
+  color: black;
 }
 
 #idle_inhibitor {
-  background-color: #72a98f;
+  background-color: @silver;
+  color: black;
 }
 
-#cpu,
+#cpu {
+  background-color: @gunmetal;
+}
+
 #memory {
-  background-color: #8de969;
-  color: black;
+  background-color: @black;
+}
+
+#temperature {
+  background-color: @grey1;
 }
 
 #custom-power-menu {
-  background-color: #cbef43;
-  color: black;
+  background-color: @black;
 }
