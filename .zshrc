@@ -5,56 +5,77 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# Settings from compinstall
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
+zstyle :compinstall filename '/home/philipp/.zshrc'
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+autoload -Uz compinit
+compinit
 
-HIST_STAMPS="mm/dd/yyyy"
+# History (stolen from https://github.com/dreamsofautonomy/zensh)
+HISTSIZE=50000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
-plugins=(
-  aliases
-  git
-  copyfile
-  history
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+# Other options
+setopt autocd
+setopt extendedglob
+setopt nomatch
+setopt notify
+unsetopt beep
 
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-source $ZSH/oh-my-zsh.sh
+# Vim-mode
+bindkey -v
 
-# make delete work
-#bindkey "^[[3~" delete-char
-
-# completion
-source <(kubectl completion zsh)
-source <(helm completion zsh)
-
-# keychain for remembering ssh key passwords
-#eval $(keychain --eval --quiet id_ed25519)
-
-# aliases
+# Aliases
 alias ranger='source ranger'
-alias hx='helix'
+# alias hx='helix'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
-alias ssh='kitten ssh'
+# alias ssh='kitten ssh'
 alias vim='nvim'
 alias vimdiff='nvim -d'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
-# env
+# Env
 export EDITOR='nvim'
-#export PATH=$PATH:$HOME/go/bin
+export MANPAGER='nvim +Man!' # use neovim for as pager for man pages
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
-export SSH_ASKPASS=/usr/bin/ksshaskpass
-export SSH_ASKPASS_REQUIRE=prefer
 
-# for agnoster
-# replace user@hostname with this cute little space invader
-# prompt_context() {
-#   prompt_segment black default "👾"
-# }
+# Custom completions
+# source <(kubectl completion zsh)
+# source <(helm completion zsh)
+# Extra completions installed via arch package extra/zsh-completions
+
+# fzf integration
+source <(fzf --zsh)
+
+# Ohmyzsh plugins
+OMZ=$HOME/.local/share/ohmyzsh
+source $OMZ/plugins/aliases/aliases.plugin.zsh # alias (finder) plugin
+source $OMZ/lib/git.zsh # omz git aliases
+source $OMZ/plugins/git/git.plugin.zsh # omz git aliases
+
+# Autosuggestions (installed via arch package extra/zsh-autosuggestions)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Source powerlevel10k (installed via aur zsh-theme-powerlevel10k-git)
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Syntax highlighting (installed via arch package extra/zsh-syntax-highlighting)
+# Must be sourced last
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

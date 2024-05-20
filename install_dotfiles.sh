@@ -18,14 +18,8 @@ sed -i 's/^name.*$/name = breeze_cursors/' ~/.local/share/icons/extracted_breeze
 hyprcursor-util -c ~/.local/share/icons/extracted_breeze_cursors -o ~/.local/share/icons/
 rm -r ~/.local/share/icons/extracted_breeze_cursors
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install zsh-autosuggestions, zsh-syntax-highlighting, zsh-completions and powerlevel10k
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+# Download ohmyzsh to use source some of the plugins from the .zshrc
+git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.local/share/ohmyzsh
 
 # Copy the dotfiles
 cp -r .bin ~/
