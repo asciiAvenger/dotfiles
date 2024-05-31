@@ -12,16 +12,14 @@ git clone --depth=1 https://gitlab.com/dwt1/wallpapers.git ~/.local/share/wallpa
 magick ~/.local/share/wallpapers/0007.jpg ~/.local/share/wallpapers/0007.png
 
 # Convert the breeze cursor theme into a hyprcursor theme
-mkdir ~/.local/share/icons
-hyprcursor-util -x /usr/share/icons/breeze_cursors -o ~/.local/share/icons/
-sed -i 's/^name.*$/name = breeze_cursors/' ~/.local/share/icons/extracted_breeze_cursors/manifest.hl
-hyprcursor-util -c ~/.local/share/icons/extracted_breeze_cursors -o ~/.local/share/icons/
-rm -r ~/.local/share/icons/extracted_breeze_cursors
+# mkdir ~/.local/share/icons
+# hyprcursor-util -x /usr/share/icons/breeze_cursors -o ~/.local/share/icons/
+# sed -i 's/^name.*$/name = breeze_cursors/' ~/.local/share/icons/extracted_breeze_cursors/manifest.hl
+# hyprcursor-util -c ~/.local/share/icons/extracted_breeze_cursors -o ~/.local/share/icons/
+# rm -r ~/.local/share/icons/extracted_breeze_cursors
 
 # Download ohmyzsh to use source some of the plugins from the .zshrc
 git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.local/share/ohmyzsh
 
-# Copy the dotfiles
-cp -r .bin ~/
-cp -r .config/* ~/.config/
-cp ./{.p10k.zsh,.zshrc,.vimrc} ~/
+# Use stow to symlink the dotfiles
+stow -t ~ .

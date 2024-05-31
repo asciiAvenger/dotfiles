@@ -68,6 +68,7 @@ ripgrep
 sddm-theme-tokyo-night-git
 slurp
 steam
+stow
 thunderbird
 tmux-plugin-manager
 transmission-qt

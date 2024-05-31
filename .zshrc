@@ -52,6 +52,9 @@ export EDITOR='nvim'
 export MANPAGER='nvim +Man!' # use neovim for as pager for man pages
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
+export SSH_ASKPASS=/usr/bin/ksshaskpass
+export SSH_ASKPASS_REQUIRE=prefer
+
 
 # Custom completions
 # source <(kubectl completion zsh)
