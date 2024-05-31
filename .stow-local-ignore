@@ -1,3 +1,7 @@
 .git
 etc
 README.md
+dependencies.txt
+diff_dotfiles.sh
+.gitignore
+install_dotfiles.sh
