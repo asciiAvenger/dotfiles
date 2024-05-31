@@ -81,6 +81,8 @@ wireplumber
 wl-clipboard
 wlogout
 wofi
+wofi-calc
+wofi-emoij
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 yq
