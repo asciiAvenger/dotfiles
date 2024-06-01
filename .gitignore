@@ -4,3 +4,5 @@
 # ignore tmux plugins
 **/tmux/plugins
 
+# ignore always changing hyprpaper config
+**/hyprpaper.conf
