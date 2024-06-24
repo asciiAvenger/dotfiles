@@ -19,7 +19,7 @@ return {
 		vim.keymap.set("n", "<A-H>", ":BufferMovePrevious<CR>")
 		vim.keymap.set("n", "<A-L>", ":BufferMoveNext<CR>")
 		vim.keymap.set("n", "<A-p>", ":BufferPick<CR>")
-		vim.keymap.set("n", "<A-c>", ":BufferClose<CR>")
+		vim.keymap.set("n", "<A-q>", ":BufferClose<CR>")
 
 		vim.keymap.set("n", "<leader>bb", ":BufferOrderByBufferNumber<CR>")
 		vim.keymap.set("n", "<leader>bd", ":BufferOrderByDirectory<CR>")
