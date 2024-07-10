@@ -1,0 +1,14 @@
+import = [
+  "~/.config/alacritty/tokyonight.toml",
+]
+[window]
+dimensions = { columns = 150, lines = 38 }
+padding = { x = 3, y = 3 }
+opacity = 1.0
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular" }
+size = 18.0
+
+[selection]
+save_to_clipboard = true
