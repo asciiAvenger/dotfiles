@@ -34,14 +34,14 @@ setopt notify
 unsetopt beep
 
 # Vim-mode
-bindkey -v
+# bindkey -v
 
 # Aliases
 alias ranger='source ranger'
 # alias hx='helix'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
-alias ssh='kitten ssh'
+# alias ssh='kitten ssh'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 alias ls='ls --color=auto'
