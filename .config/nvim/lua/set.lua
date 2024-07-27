@@ -26,3 +26,6 @@ vim.g.netrw_liststyle = 3
 
 -- persistent undo
 vim.opt.undofile = true
+
+-- dark background
+vim.opt.background = "dark"

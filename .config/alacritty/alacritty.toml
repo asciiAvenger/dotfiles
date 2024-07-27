@@ -1,5 +1,6 @@
 import = [
-  "~/.config/alacritty/tokyonight.toml",
+  # "~/.config/alacritty/tokyonight.toml",
+  "~/.config/alacritty/ayu_dark.toml"
 ]
 [window]
 dimensions = { columns = 150, lines = 38 }
