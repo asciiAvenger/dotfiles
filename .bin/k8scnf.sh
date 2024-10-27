@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
-export KUBECONFIG=$(ls /tmp/kubeconfig | fzf)
+KUBECONFIG_DIR="/tmp/kubeconfig"
+SELECTED=$(ls $KUBECONFIG_DIR | fzf)
+ln -sf "$KUBECONFIG_DIR/$SELECTED" $HOME/.kube/config
+echo "Selected config: $SELECTED"
 
