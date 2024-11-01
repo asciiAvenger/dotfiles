@@ -36,6 +36,9 @@ unsetopt beep
 # Vim-mode
 # bindkey -v
 
+# bind delete key to actually delete
+bindkey  "^[[3~"  delete-char
+
 # Aliases
 alias ranger='source ranger'
 # alias hx='helix'
@@ -52,8 +55,8 @@ export EDITOR='nvim'
 export MANPAGER='nvim +Man!' # use neovim for as pager for man pages
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
-export SSH_ASKPASS=/usr/bin/ksshaskpass
-export SSH_ASKPASS_REQUIRE=prefer
+# export SSH_ASKPASS=/usr/bin/ksshaskpass
+# export SSH_ASKPASS_REQUIRE=prefer
 
 
 # Custom completions
