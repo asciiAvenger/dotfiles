@@ -2,6 +2,7 @@
 etc
 README.md
 dependencies.txt
+base_packages.txt
 diff_dotfiles.sh
 .gitignore
 install_dotfiles.sh

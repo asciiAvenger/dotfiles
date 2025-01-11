@@ -47,7 +47,10 @@ alias yayss='yay -Ss'
 # alias ssh='kitten ssh'
 alias vim='nvim'
 alias vimdiff='nvim -d'
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
+alias ls='eza --color=auto --group-directories-first'
+alias lt='eza --color=auto --group-directories-first -aT'
+
 alias grep='grep --color=auto'
 
 # Env
@@ -55,6 +58,7 @@ export EDITOR='nvim'
 export MANPAGER='nvim +Man!' # use neovim for as pager for man pages
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.bin
+export PATH=$PATH:$HOME/.local/bin
 # export SSH_ASKPASS=/usr/bin/ksshaskpass
 # export SSH_ASKPASS_REQUIRE=prefer
 
