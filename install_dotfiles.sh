@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Install dependencies
-DEPS=$(cat dependencies.txt)
+DEPS=$(cat base_packages.txt)
 yay -S $DEPS
 
 # Download wallpaper collection by Derek Taylor
 # https://gitlab.com/dwt1/wallpapers
-git clone --depth=1 https://gitlab.com/dwt1/wallpapers.git ~/.local/share/wallpapers
+# git clone --depth=1 https://gitlab.com/dwt1/wallpapers.git ~/.local/share/wallpapers
 
 # Convert one file to PNG, since hyprlock currently only supports PNGs
-magick ~/.local/share/wallpapers/0007.jpg ~/.local/share/wallpapers/0007.png
+# magick ~/.local/share/wallpapers/0007.jpg ~/.local/share/wallpapers/0007.png
 
 # Convert the breeze cursor theme into a hyprcursor theme
 # mkdir ~/.local/share/icons

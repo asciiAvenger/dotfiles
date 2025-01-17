@@ -4,7 +4,8 @@ padding = { x = 3, y = 3 }
 opacity = 1.0
 
 [font]
-normal = { family = "MesloLGS NF", style = "Regular" }
+normal = { family = "DaddyTimeMono Nerd Font Mono", style = "Regular" }
+# normal = { family = "VictorMono Nerd Font Mono", style = "Regular" }
 size = 18.0
 
 [selection]
