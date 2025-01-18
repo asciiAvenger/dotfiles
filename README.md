@@ -1,3 +1,3 @@
 # dotfiles
 
-some basic dotfiles for my arch install
+install the dependencies and run `stow -t ~ .`

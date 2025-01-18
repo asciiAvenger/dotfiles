@@ -1,0 +1,11 @@
+audiotube
+discord
+libreoffice-still-de
+merkuro
+nextcloud-client
+okular
+prismlauncher
+steam
+thunderbird
+veracrypt
+yt-dlp
