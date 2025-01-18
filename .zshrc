@@ -33,25 +33,43 @@ setopt nomatch
 setopt notify
 unsetopt beep
 
-# Vim-mode
-# bindkey -v
+# force emacs bindings or else tmux will change it
+bindkey -e
 
 # bind delete key to actually delete
 bindkey  "^[[3~"  delete-char
 
 # Aliases
 alias ranger='source ranger'
-# alias hx='helix'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
-# alias ssh='kitten ssh'
 alias vim='nvim'
 alias vimdiff='nvim -d'
-# alias ls='ls --color=auto'
-alias ls='eza --color=auto --group-directories-first'
-alias lt='eza --color=auto --group-directories-first -aT'
-
+alias ls='eza --color=auto --group-directories-first --icons'
+alias ll='eza --color=auto --group-directories-first --icons'
+alias lt='eza --color=auto --group-directories-first --icons -aT'
 alias grep='grep --color=auto'
+
+# Git aliases
+alias ga='git add'
+alias gaa='git add --all'
+alias gd='git diff'
+alias gp='git push'
+alias gl='git pull'
+alias glo='git log --online --graph --decorate'
+alias gm='git merge'
+alias gss='git status --short'
+alias gc='git commit --verbose'
+alias gf='git fetch --all'
+alias gfp='git fetch --all --prune'
+alias gsw='git switch'
+
+# Kubectl aliases
+alias k='kubectl'
+alias kg='kubectl get'
+alias kga='kubectl get --all-namespaces'
+alias kdel='kubectl delete'
+alias krun='kubectl run'
 
 # Env
 export EDITOR='nvim'
@@ -62,20 +80,8 @@ export PATH=$PATH:$HOME/.local/bin
 export SSH_ASKPASS=/usr/bin/ksshaskpass
 export SSH_ASKPASS_REQUIRE=prefer
 
-
-# Custom completions
-# source <(kubectl completion zsh)
-# source <(helm completion zsh)
-# Extra completions installed via arch package extra/zsh-completions
-
 # fzf integration
 source <(fzf --zsh)
-
-# Ohmyzsh plugins
-# OMZ=$HOME/.local/share/ohmyzsh
-# source $OMZ/plugins/aliases/aliases.plugin.zsh # alias (finder) plugin
-# source $OMZ/lib/git.zsh # omz git aliases
-# source $OMZ/plugins/git/git.plugin.zsh # omz git aliases
 
 # Autosuggestions (installed via arch package extra/zsh-autosuggestions)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
