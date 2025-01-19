@@ -9,16 +9,11 @@ jq
 k9s
 kubectl
 lazygit
-libreoffice-still-de
 luajit
 luarocks
-merkuro
 neovim
 npm
-okular
-prismlauncher
-ripgrepaudiotube
-steam
+ripgrep
 vagrant
 virtualbox
 virtualbox-guest-iso
