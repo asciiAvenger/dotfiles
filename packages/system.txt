@@ -17,6 +17,7 @@ stow
 stow
 tmux
 tmux-plugin-manager
+ttf-daddytime-mono-nerd
 wl-clipboard
 zsh
 zsh-autosuggestions
