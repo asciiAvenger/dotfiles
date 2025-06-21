@@ -1,12 +1,12 @@
 [window]
-dimensions = { columns = 150, lines = 38 }
+dimensions = { columns = 110, lines = 28 }
 padding = { x = 3, y = 3 }
 opacity = 1.0
 
 [font]
 normal = { family = "DaddyTimeMono Nerd Font Mono", style = "Regular" }
 # normal = { family = "VictorMono Nerd Font Mono", style = "Regular" }
-size = 18.0
+size = 13.0
 
 [selection]
 save_to_clipboard = true
