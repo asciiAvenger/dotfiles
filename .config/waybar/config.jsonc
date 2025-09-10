@@ -3,7 +3,7 @@
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
   "spacing": 0, // Gaps between modules (4px)
-  //"height": 30,
+  "height": 18,
   "modules-left": [
     "custom/power-menu",
     "clock",
@@ -38,7 +38,7 @@
     ]
   },
   "tray": {
-    "icon-size": 24,
+    "icon-size": 16,
     "spacing": 10
   },
   "clock": {
