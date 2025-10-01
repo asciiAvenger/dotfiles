@@ -21,6 +21,9 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
+        config = function ()
+
+        end
     },
 
     -- formatting
@@ -47,7 +50,6 @@ return {
     {
         "LittleEndianRoot/mason-conform",
         opts = {
-            automatic_installation = false,
             ensure_installed = {
                 "stylua",
                 "prettier",
@@ -64,7 +66,6 @@ return {
             local lint = require("lint")
 
             lint.linters_by_ft = {
-                go = { "golangci-lint" },
                 lua = { "luacheck" },
             }
 
@@ -81,12 +82,6 @@ return {
     },
     {
         "rshkarin/mason-nvim-lint",
-        opts = {
-            automatic_installation = false,
-            ensure_installed = {
-                "golangci-lint",
-                "luacheck",
-            },
-        }
+        opts = {}
     },
 }
