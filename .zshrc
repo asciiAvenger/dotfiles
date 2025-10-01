@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
 # Settings from compinstall
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
@@ -43,13 +36,13 @@ bindkey  "^[[3~"  delete-char
 alias ranger='source ranger'
 alias pacss='pacman -Ss'
 alias yayss='yay -Ss'
-alias vim='nvim'
-alias vimdiff='nvim -d'
 alias ls='eza --color=auto --group-directories-first --icons'
 alias ll='eza --color=auto --group-directories-first --icons -l'
 alias la='eza --color=auto --group-directories-first --icons -la'
 alias lt='eza --color=auto --group-directories-first --icons -aT'
 alias grep='grep --color=auto'
+
+alias ls='ls --color=auto'
 
 # Git aliases
 alias ga='git add'
@@ -86,12 +79,6 @@ source <(fzf --zsh)
 
 # Autosuggestions (installed via arch package extra/zsh-autosuggestions)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Source powerlevel10k (installed via aur zsh-theme-powerlevel10k-git)
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Starship prompt
 eval "$(starship init zsh)"

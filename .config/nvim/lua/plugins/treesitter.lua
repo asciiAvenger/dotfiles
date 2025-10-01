@@ -1,11 +1,14 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
-	config = function()
-		require("nvim-treesitter.configs").setup({
-			ensure_installed = { "lua", "vim", "bash", "markdown", "regex", "toml", "xml", "yaml" },
-			sync_install = false,
-			auto_install = true,
-		})
-	end,
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    build = ":TSUpdate",
+    opts = {
+        ensure_installed = { "bash", "bibtex", "dockerfile", "gitignore", "go", "gomod", "gosum", "gotmpl", "helm", "ini", "json", "latex", "lua", "markdown", "nginx", "regex", "sql", "toml", "vim", "xml", "yaml" },
+        indent = {
+            enable = true
+        },
+        highlight = {
+            enable = true
+        }
+    }
 }
