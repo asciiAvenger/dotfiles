@@ -41,8 +41,7 @@ alias ll='eza --color=auto --group-directories-first --icons -l'
 alias la='eza --color=auto --group-directories-first --icons -la'
 alias lt='eza --color=auto --group-directories-first --icons -aT'
 alias grep='grep --color=auto'
-
-alias ls='ls --color=auto'
+alias cat='bat'
 
 # Git aliases
 alias ga='git add'

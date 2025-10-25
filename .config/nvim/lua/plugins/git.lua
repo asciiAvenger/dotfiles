@@ -1,9 +1,7 @@
 return {
-    "f-person/git-blame.nvim",
-    opts = {
-        enabled = false
-    },
-    config = function()
-        vim.keymap.set("n", "<leader>gb", ":GitBlameToggle<CR>")
-    end,
+	"lewis6991/gitsigns.nvim",
+	opts = {},
+	config = function()
+		vim.keymap.set("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>")
+	end,
 }

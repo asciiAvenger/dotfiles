@@ -1,9 +1,6 @@
 -- map the leader to space
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
--- open netrw
-vim.keymap.set("n", "<leader>m", ":Ex<CR>")
+vim.g.maplocalleader = " "
 
 -- quickfix list bindings
 vim.keymap.set("n", "<leader>qo", ":copen<CR>")
