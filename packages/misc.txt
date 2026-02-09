@@ -1,11 +1,7 @@
-audiotube
 discord
-libreoffice-still-de
-merkuro
+libreoffice-fresh-de
 nextcloud-client
 okular
 prismlauncher
 steam
 thunderbird
-veracrypt
-yt-dlp
