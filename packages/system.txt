@@ -1,7 +1,10 @@
 alacritty
+bat
 cotp
 cotp-converters
+eza
 fastfetch
+fzf
 htop
 hunspell-de
 hunspell-en_us

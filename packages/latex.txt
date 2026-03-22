@@ -7,4 +7,3 @@ texlive-latex
 texlive-latexextra
 texlive-latexrecommended
 texlive-mathscience
-texstudio

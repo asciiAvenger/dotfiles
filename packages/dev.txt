@@ -1,5 +1,4 @@
 ansible
-discord
 docker
 docker-compose
 git
@@ -14,9 +13,4 @@ luarocks
 neovim
 npm
 ripgrep
-vagrant
-virtualbox
-virtualbox-guest-iso
-virtualbox-host-dkms
 yq
-zed
