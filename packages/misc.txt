@@ -1,5 +1,3 @@
 discord
 libreoffice-fresh-de
-nextcloud-client
 okular
-prismlauncher
