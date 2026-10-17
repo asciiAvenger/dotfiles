@@ -16,3 +16,8 @@ import = [
   # "~/.config/alacritty/tokyonight.toml",
   "~/.config/alacritty/ayu_dark.toml",
 ]
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
